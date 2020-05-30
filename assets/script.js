@@ -23,8 +23,7 @@ window.addEventListener("optimizedScroll", function() {
 });
 
 //This snippet makes things appear only if its in the viewport
-
-var isInViewport = function (elem) {
+function isInViewport (elem) {
     var bounding = elem.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
@@ -33,20 +32,26 @@ var isInViewport = function (elem) {
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 };
-myID = document.getElementById("education");
 
-var myScrollFunc = function() {
+
+myID = document.getElementById("educationtitle");
+showID = document.getElementById("edu");
+
+function myScrollFunc(){
+    console.log("one call");
   var y = window.scrollY;
   if (isInViewport(myID)) {
-    myID.className = "educationshow"
+
+    showID.className = "educationshow"
   } else {
-      if(myID.className!="educationshow"){
-         myID.className = "educationhide"
+      if(showID.className!="educationshow"){
+         showID.className = "educationhide"
       }
     
   }
 };
 
-window.addEventListener("scroll", myScrollFunc);
+
+document.addEventListener("scroll", myScrollFunc);
 
 

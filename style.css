@@ -164,7 +164,7 @@ body{
 
     .educationshow{
 
-        animation: fadeIn ease 1s;
+        animation: fadeIn ease 3s;
         opacity:1;
     }
 
@@ -175,34 +175,47 @@ body{
 
     .dorm{
         
-        max-width: 45%;
+        max-width: 30%;
         height: auto;
-        margin: 15px 12px 3px 0px;
+        margin: 15px 30px 9px 0px;
         float: left;
       
         
     }
 
-    .dormfig{
-        overflow: hidden;
-        margin-left: 400;
-       
-        
+ 
+
+@media screen and (max-width:600px){
+
+
+    #sideBar{
+        color:white;
+        background-color: #353b48;
+        height:100%;
+        margin-left: -40px;
+        position: fixed;
+        width: 200px;
+        z-index: 1;
+        top:0;
+        bottom:0;
+        overflow-x: hidden;
+        /*vertical-align: center;*/
+        padding-top: 10%;
+        font-weight: lighter;
+    
     }
 
-    /* align the caption of dorm photo */
-    .dormfig>figcaption{
-      
-            font-family: sans-serif;
-            align-content: right;
-            float: left;
-       
-            font-weight: lighter;
-            background-color: #888;
-            color: white;
-            text-align: center;
+    #main{
+        margin-left: 200px; 
+        padding: 0px 30px;
+        
+        -webkit-animation: fadeIn ease 1s;
+        -moz-animation: fadeIn ease 1s;
+        -o-animation: fadeIn ease 1s;
+        -ms-animation: fadeIn ease 1s;
         
     }
+}
 
 
 
