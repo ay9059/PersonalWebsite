@@ -191,29 +191,94 @@ body{
     #sideBar{
         color:white;
         background-color: #353b48;
-        height:100%;
-        margin-left: -40px;
-        position: fixed;
-        width: 200px;
+        height:30px;
+    
+       
+        
+        
+        width: auto;
         z-index: 1;
-        top:0;
-        bottom:0;
-        overflow-x: hidden;
+    
+        
         /*vertical-align: center;*/
         padding-top: 10%;
         font-weight: lighter;
+        
+        
     
     }
 
+    .side {
+        color:#818181;
+        text-decoration: none;
+        padding: 0px 8px 0px 0px;
+        font-size: 60%;
+        
+        margin-right: 10%;
+        display: inline;
+        font-weight: lighter;
+    }
+    
+
+    #ulsocial{
+        margin-left: 20%;
+        margin-top: -7%;
+    
+        margin-bottom: auto;
+    }
+    #wheelImage{
+        margin-left: 2%;
+        margin-top: -10%;
+       margin-right: 5%;
+     
+        max-width: 14%;
+        border-radius: 50%;
+        text-align: center;
+   
+           
+        float:left
+    
+    }
+
+    #SocialMedia{
+        display: none;
+       
+    }
+
+    .social{
+  
+        display: none;
+        display: inline-block;
+        margin-top:-20%;
+        margin-left: 10%;
+        width: 5%;
+        
+        
+        
+    }
+
     #main{
-        margin-left: 200px; 
-        padding: 0px 30px;
+        margin-top:20%;
+        margin-left: 7px; 
+        
         
         -webkit-animation: fadeIn ease 1s;
         -moz-animation: fadeIn ease 1s;
         -o-animation: fadeIn ease 1s;
         -ms-animation: fadeIn ease 1s;
         
+    }
+
+    #cover{
+    
+        width:800px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+       
+
     }
 }
 
